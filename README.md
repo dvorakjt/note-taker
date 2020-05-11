@@ -7,8 +7,8 @@ This app saves notes that the user creates to a json file stored on Heroku. A li
 [Introduction](#introduction)  
 [Installation](#installation)  
 [Usage](#usage)  
-[Code](#code)
-[Future Development](#future-development)
+[Code](#code)  
+[Future Development](#future-development)  
 [Acknowledgements](#acknowledgements)  
 [Contributing](#contributing)  
 [About the Author](#about-the-author)  
@@ -47,7 +47,7 @@ From here, this object is pushed to the noteDB array of objects. noteDB is then 
 
 The delete route gets the unique id supplied in the url, and then uses filter to create a new array from notesDB, filtering out any instances of notes with the id property being equal to the received id. The resultant array is then once again saved to db.json.
 
-```const id = req.params.id;``` 
+```const id = req.params.id;```  
 ```noteDB = noteDB.filter(note => note.id !== id);```  
 
 
@@ -57,19 +57,16 @@ My ideas for future development include requiring users to login with a username
 
 ## Acknowledgements
 
-As this was a homework assignment, the following files were prefabricated for our cohort to use:
+As this was a homework assignment, the following files were prefabricated for our cohort to use:  
 
--index.js
--styles.css (although I edited this to give the page a more unique look)
--index.html
--notes.html
+-index.js  
+-styles.css (although I edited this to give the page a more unique look)  
+-index.html  
+-notes.html  
 
 ## Contributing
 
-If you notice any problems with the code, please submit a github issue. 
-
-![GitHub](https://img.shields.io/github/license/dvorakjt/note-taker)
-
+If you notice any problems with the code, please submit a github issue.  
 
 ## About the Author
 

@@ -60,7 +60,7 @@ fs.readFile("./db/db.json", "utf8", (err, data) => {
 
     //Delete Route
     app.delete("/api/notes/:id", (req, res) => {
-        console.log("Delete requested.");
+        // console.log("Delete requested.");
         const id = req.params.id;
         noteDB = noteDB.filter(note => note.id !== id);
         fs.writeFile("./db/db.json", JSON.stringify(noteDB), (err) => {
